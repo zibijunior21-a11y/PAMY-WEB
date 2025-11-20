@@ -1,0 +1,5 @@
+import sqlite3
+
+
+sqlite3
+sqlite3.SQLITE_CREATE_TABLE
