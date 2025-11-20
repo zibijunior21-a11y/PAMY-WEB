@@ -362,6 +362,51 @@ toggleBtn.addEventListener("click", () => {
   left: 0;
 }
 
+/* ---------- Pour Chrome, Edge, Safari (WebKit / Blink) ---------- */
+/* Applique au body (et donc à toute la page) */
+body::-webkit-scrollbar {
+  width: 12px;               /* largeur de la scrollbar verticale */
+  height: 12px;              /* hauteur de la scrollbar horizontale */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;       /* couleur du rail (track) */
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1E3A8A; /* couleur du "thumb" (curseur) */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1; /* crée un léger paddin autour du thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #162e6f; /* couleur au survol */
+}
+
+/* ---------- Pour Firefox ---------- */
+/* scrollbar-color: <thumb> <track>; */
+html {
+  scrollbar-width: thin;                 /* auto | thin | none */
+  scrollbar-color: #1E3A8A #f1f1f1;      /* thumb then track */
+}
+
+/* ---------- Exemple pour un conteneur défilant spécifique ---------- */
+/* Remplace .scrollable par la classe de ton élément */
+.scrollable {
+  max-height: 400px;
+  overflow: auto;
+}
+
+/* WebKit pour l'élément */
+.scrollable::-webkit-scrollbar { width: 10px; }
+.scrollable::-webkit-scrollbar-track { background: #f7f7f7; }
+.scrollable::-webkit-scrollbar-thumb { background: #1E3A8A; border-radius: 8px; }
+
+/* Firefox pour l'élément (hérite d'html mais on peut préciser) */
+.scrollable { scrollbar-color: #1E3A8A #f7f7f7; scrollbar-width: thin; }
+
+ 
 .hero-content {
   position: absolute;
   top: 0;
@@ -1854,3 +1899,4 @@ section.testimonials {
   </script>
 </body>
 </html>
+
