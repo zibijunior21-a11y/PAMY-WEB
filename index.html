@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <!-- Charset & Responsive -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO de base -->
+<title>  PAMY SOLUTION</title>
+
+
+<link  rel="icon" type=" image/png" href="Skywings_17-08-24-main\assets\logo (2).png">
+<meta name="description" content="PAMY SOLUTION est une agence digitale premium basée au Cameroun. Nous créons des sites web modernes, des applications mobiles et offrons des services SEO et hébergement professionnel.">
+
+<!-- Robots -->
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+<!-- Canonical -->
+<link rel="canonical" href="Skywings_17-08-24-main\assets\logo.png">
+
+<!-- Open Graph (Facebook / LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="PAMY SOLUTION — Agence Digitale Premium au Cameroun">
+<meta property="og:description" content="Votre partenaire digital pour sites web, apps mobiles, hébergement et SEO. Bénéficiez de solutions innovantes adaptées à vos besoins.">
+
+<meta property="og:site_name" content="Skywings_17-08-24-main\assets\logo.png">
+<meta property="og:image" content="Skywings_17-08-24-main\assets\logo.png">
+<meta property="og:image:alt" content="Skywings_17-08-24-main\assets\logo.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PAMY SOLUTION — Agence Digitale Premium">
+<meta name="twitter:description" content="Experts en création de sites web, apps mobiles et stratégie SEO au Cameroun.">
+<meta name="twitter:image" content="Skywings_17-08-24-main\assets\logo.png">
+<meta name="twitter:site" content="@SiteaSolutions">
+
+<!-- Hreflang (si multilingue, sinon tu gardes juste fr) -->
+<link rel="alternate" href="https://www.sitea-solutions.com/" hreflang="fr" />
+<link rel="alternate" href="https://www.sitea-solutions.com/en/" hreflang="en" />
+<link rel="alternate" href="https://www.sitea-solutions.com/" hreflang="x-default" />
+
+<!-- JSON-LD (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.sitea-solutions.com/#org",
+      "name": "Sitea Solutions",
+      "url": "https://www.sitea-solutions.com",
+      "logo": "https://www.sitea-solutions.com/assets/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/siteasolutions",
+        "https://www.linkedin.com/company/siteasolutions",
+        "https://twitter.com/SiteaSolutions"
+      ],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+237600000000",
+        "contactType": "customer service",
+        "areaServed": "CM",
+        "availableLanguage": ["fr","en"]
+      }]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.sitea-solutions.com/#website",
+      "url": "https://www.sitea-solutions.com",
+      "name": "Sitea Solutions",
+      "publisher": { "@id": "https://www.sitea-solutions.com/#org" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.sitea-solutions.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Google site verification -->
+<meta name="google-site-verification" content="{{ton_code_verification}}" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:"Poppins",sans-serif;background:#f8faff;color:#222;overflow-x:hidden;}
+    a{text-decoration:none;color:inherit;}
+    h1,h2,h3{font-weight:700;}
+    .btn5{padding:12px 28px;border-radius:30px;border:none;cursor:pointer;font-weight:600;transition:.3s;}
+    .btn-primary5{background:linear-gradient(45deg,#00c6ff,#6a11cb);color:#fff;}
+    .btn-primary1:hover{opacity:.9;}
+    .btn-outline{border:2px solid #6a11cb;color:#6a11cb;background:transparent;}
+    .btn-outline:hover{background:#6a11cb;color:#fff;}
+  /* HEADER */
+header {
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 5%;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,.05);
+}
+
+/* LOGO */
+header .logo {
+  font-size: 1.6rem;
+  color: #6a11cb;
+  font-weight: 700;
+}
+
+/* NAVIGATION DESKTOP */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+nav ul li a {
+  color: #1E3A8A;
+  font-weight: 500;
+  text-decoration: none;
+  transition: .3s;
+}
+nav ul li a:hover { color: #3568f3; }
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px; height: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 110;
+}
+.menu-toggle span {
+  display: block;
+  height: 3px; width: 100%;
+  background: #1E3A8A;
+  border-radius: 2px;
+  transition: .3s;
+}
+
+/* Animation burger → croix */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(7px);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-7px);
+}
+
+/* NAVIGATION MOBILE */
+@media(max-width:768px) {
+  nav {
+    position: fixed;
+    top: -100%; left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    transition: top .3s ease;
+    color: #1E3A8A;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+  }
+  .menu-toggle { display: flex; }
+  nav.active { top: 70px; } /* apparaît juste sous le header */
+}
+
+
+
+    
+    /* SERVICES */
+    .services{padding:80px 5%;background:#fff;text-align:center;}
+    .services h2{font-size:2.2rem;margin-bottom:20px;color:#1E3A8A;}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;margin-top:40px;}
+    .service-card{background:rgba(255,255,255,0.7);backdrop-filter:blur(12px);border-radius:18px;padding:30px;transition:.3s;box-shadow:0 6px 20px rgba(0,0,0,.08);}
+    .service-card:hover{transform:translateY(-8px);}
+    .service-card img{width:70px;margin-bottom:15px;}
+    .service-card h3{margin-bottom:10px;color:#1E3A8A;}
+    .service-card p{color:#555;margin-bottom:20px;}
+    
+    /* CONTACT */
+    .contact{padding:80px 5%;background:#fff;text-align:center;}
+    .contact h2{color:#1E3A8A;margin-bottom:20px;}
+    .contact-form{max-width:600px;margin:0 auto;background:#f8faff;padding:30px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.05);}
+    .contact-form input,.contact-form textarea{width:100%;padding:12px;margin-bottom:15px;border:1px solid #1E3A8A;border-radius:8px;background:#fff;color:#222;}
+    .contact-form input:focus,.contact-form textarea:focus{border-color:#1E3A8A;outline:none;}
+    .contact-form button{width:100%;}
+    /* FOOTER */
+    footer{background:#1E3A8A;padding:40px 5%;text-align:center;color:#fff;}
+    footer h4{margin-bottom:15px;}
+    footer a{display:inline-block;color:#fff;margin:0 10px;}
+    footer a:hover{opacity:.8;}
+    /* MODAL */
+    .modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:200;}
+    .modal-content{background:#fff;padding:30px;border-radius:12px;max-width:400px;width:90%;position:relative;box-shadow:0 6px 20px rgba(0,0,0,.1);}
+    .modal-content h3{color:#1E3A8A;margin-bottom:20px;}
+    .modal-content input,.modal-content select{width:100%;padding:12px;margin-bottom:15px;border:1px solid #ccc;border-radius:8px;}
+    .modal-content button{width:100%;}
+    .modal-close{position:absolute;top:10px;right:15px;cursor:pointer;font-size:1.4rem;color:#555;}
+    
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="Skywings_17-08-24-main\assets\logo.png"   height="80px" alt="">
+      
+    </div>
+    
+    <!-- Bouton hamburger -->
+    <button class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  
+    <nav>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Avis</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<script>
+  const toggleBtn = document.querySelector(".menu-toggle");
+const navbar = document.querySelector("nav");
+
+toggleBtn.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
+</script>
+ <!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-slideshow">
+    <!-- Slide 1 -->
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Votre succès digital commence ici 🚀</h1>
+        <p>SEO • Développement Web & Mobile • Hébergement • Marketing Digital</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1598257006626-48b0c252070d?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Optimisez votre visibilité en ligne 🔍</h1>
+        <p>Un référencement naturel puissant pour attirer vos clients.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1593642634443-44adaa06623a?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Des sites modernes et sécurisés 💻</h1>
+        <p>Responsive, rapide et conçu pour la performance.</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Des campagnes publicitaires efficaces 📢</h1>
+        <p>Google Ads et Social Media pour booster vos ventes.</p>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Votre croissance, notre mission 🌟</h1>
+        <p>Un accompagnement digital complet et personnalisé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  
+</style>
+
+  <script>
+  let slides = document.querySelectorAll('.slide');
+  let index = 0;
+
+  function showSlide() {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+    index = (index + 1) % slides.length;
+  }
+
+  setInterval(showSlide, 5000); // change toutes les 5s
+</script>
+
+</script>
+<style>
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centre vertical */
+  align-items: center;     /* centre horizontal */
+  text-align: center;
+
+  color: #fff;
+  padding: 20px;
+  z-index: 2;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Centre le texte */
+  width: 100%;
+  padding: 0 20px; /* Pour éviter que le texte touche les bords */
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+}
+
+.slide {
+  position: relative;
+  height: 100vh;
+}
+
+
+
+  /* HERO */
+  .hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:  center;
+    overflow: hidden;
+    color: #fff;
+  }
+
+  .hero-slideshow {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  .slide.active {
+    opacity: 1;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    align-items: center;
+  justify-content: center;
+  
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: #ddd;
+    align-items: center;
+  justify-content: center;
+  }
+
+  .hero-buttons5 {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn5 {
+    padding: 12px 26px;
+    border-radius: 40px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn-primary5 {
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    color: #fff;
+  }
+
+  .btn-primary5:hover {
+    opacity: 0.9;
+  }
+
+  .btn-outline1{
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+  }
+
+  .btn-outline1:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+<script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+const navbar = document.querySelector("nav");
+
+toggleBtn.addEventListener("click", () => {
+  toggleBtn.classList.toggle("active");
+  navbar.classList.toggle("active");
+});
+
+</script>
+
+ 
+
+
+  <style>
+    
+    .services {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .service-card {
+      display: inline-block;
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      margin: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      width: 260px;
+      transition: 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover { opacity: 0.9; transform: scale(1.02); }
+    .btn-outline { background:#0d6efd; color:#fff; }
+
+    /* Modale */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: #fff;
+      border-radius: 16px;
+      padding: 25px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      position: relative;
+      animation: fadeIn 0.4s ease;
+    }
+    .close {
+      position: absolute; top: 10px; right: 15px;
+      font-size: 24px; cursor: pointer; color: #666;
+    }
+    input, select {
+      width: 100%; padding: 12px; margin: 8px 0;
+      border: 1px solid #ccc; border-radius: 10px;
+    }
+    .btn-submit { background: #28a745; color: white; width: 100%; }
+    @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+  </style>
+</head>
+<body>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h2 style="color: #1E3A8A; text-align: center;">Services</h2>
+    <h2 style="color: #1E3A8A; text-align: center;">Choisissez un plan tarifaire SEO adapté à votre entreprise</h2>
+  
+    <div class="services-grid">
+  
+      <!-- Carte SEO -->
+      <div class="service-card">
+        
+        <h3>Forfait  base</h3>
+        <p>Idéal pour l'optimisation du profil Google Business et le classement des recherches locales</p>
+        <h1>1 000 $/mois</h1>
+        
+        <div class="features">
+          <ul class="service-list">
+          <p>✔ Recherche et planification SEO</p>
+          <p>✔ Mises à jour mineures du site Web</p>
+          <p>✔ SEO sur la page</p>
+          <p>✔ Création de liens d'annuaires</p>
+          <p>✔ Gérer le profil de l'entreprise</p>
+          <p>✔ Indexation de la Search Console</p>
+          <p>✔ Suivi du classement des mots clés</p>
+          <p>✔ Jusqu'à 2 articles de blog</p>
+          <p>✔ Jusqu'à 4 zones de service</p>
+        </ul>
+        </div>
+        
+        <button class="btn btn-outline subscribeBtn" data-service="SEO Avancé">Souscrire</button>
+      </div>
+  
+      <!-- Carte Sécurisation -->
+      <div class="service-card">
+    
+        <h3>Forfait Plus</h3>
+        <p>Idéal pour l'optimisation des profils d'entreprise Google multi-sites et le classement des recherches locales</p>
+        <h1>3 000 $/mois</h1>
+        
+        <div class="features">
+          <ul class="service-list">
+            <p>✔ Recherche et planification SEO</p>
+            <p>✔ Mises à jour mineures du site Web</p>
+            <p>✔ SEO sur la page</p>
+            <p>✔ Création de liens d'annuaires</p>
+            <p>✔ Gérer le profil de l'entreprise</p>
+            <p>✔ Indexation de la Search Console</p>
+            <p>✔ Suivi du classement des mots clés</p>
+            <p>✔ Jusqu'à 6 articles de blog</p>
+            <p>✔ Jusqu'à 8 zones de service </p>
+            <p>✔ 
+              Référencement YouTube </p>
+        </ul>
+        </div>
+        
+        <button class="btn btn-outline subscribeBtn" data-service="Hébergement Web">Souscrire</button>
+      </div>
+  
+      <!-- Carte Création de site web -->
+      <div class="service-card">
+        
+        <h3>Forfait pro</h3>
+        <p>Idéal pour les entreprises qui souhaitent cibler une province spécifique avec le référencement</p>
+        <h1>5 000 $/mois</h1>
+        
+        <div class="features">
+    <ul class="service-list">
+      <p>✔ Recherche et planification SEO</p>
+      <p>✔ Mises à jour mineures du site Web</p>
+      <p>✔ SEO sur la page</p>
+      <p>✔ Création de liens d'annuaires</p>
+      <p>✔ Gérer le profil de l'entreprise</p>
+      <p>✔ Indexation de la Search Console</p>
+      <p>✔ Suivi du classement des mots clés</p>
+      <p>✔ Jusqu'à 10 articles de blog</p>
+      <p>✔ Jusqu'à 1 province</p>
+      <p>✔ Référencement YouTube</p>
+        </ul>
+        </div>
+        
+        <a href="#services" class="btn btn-outline subscribeBtn" data-service="Développement Web">
+          Souscrire
+        </a>
+      </div>
+    <!--
+      <h2 style="color: #1E3A8A; text-align: center;">Services</h2>
+    <h2 style="color: #1E3A8A; text-align: center;">Choisissez un plan tarifaire SEO adapté à votre entreprise</h2> -->
+  
+      
+  
+      
+    </div>
+  </section>
+
+  
+
+
+<!-- Section SERVICES -->
+<section class="services" id="services">
+ 
+    <h2 style="color: #1E3A8A; text-align: center;">Choisissez un plan tarifaire Google Ads adapté à votre budget</h2>
+  </p>
+
+  <div class="services-grid">
+
+    <!-- Carte 1 -->
+    <div class="service-card">
+      <h3>Forfait   base</h3>
+      <h1>500 $/mois</h1>
+      <p>
+        Gérez votre budget publicitaire sur les réseaux sociaux entre 600 et 3 000 $/mois
+      </p>
+      <div class="features">
+        <ul class="service-list">
+        <p>✔ Recherche et planification publicitaires</p>
+
+        <p>✔ Conception créative d'annonces</p>
+        <p>✔ 
+          Rédaction publicitaire</p>
+        <p>✔ Configuration de la campagne publicitaire</p>
+        <p>✔ Gestion de campagne</p>
+        <p>✔ Rapports mensuels</p>
+       
+      </ul>
+      </div>
+      <button class="btn btn-outline subscribeBtn" data-service="SEO Avancé">Souscrire</button>
+    </div>
+
+    <!-- Carte 2 -->
+    <div class="service-card">
+      <h3>Forfait Plus</h3>
+      <h1>1 000 $/mois</h1>
+      <p>
+        Gérer un budget publicitaire sur les réseaux sociaux entre 3 000 et 10 000 $/mois
+      </p>
+      <div class="features">
+        <ul class="service-list">
+          <p>✔ Recherche et planification publicitaires</p>
+
+          <p>✔ Conception créative d'annonces</p>
+          <p>✔ 
+            Rédaction publicitaire</p>
+          <p>✔ Configuration de la campagne publicitaire</p>
+          <p>✔ Gestion de campagne</p>
+          <p>✔ Rapports mensuels</p>
+      </ul>
+      </div>
+      <button class="btn btn-outline subscribeBtn" data-service="Hébergement Web">Souscrire</button>
+    </div>
+
+    <!-- Carte 3 -->
+    <div class="service-card">
+      <h3>Forfait pro</h3>
+      <h1>2 000 $/mois</h1>
+      <p>
+        Gérer un budget publicitaire sur les réseaux sociaux supérieur à 10 000 $/mois
+      </p>
+
+      <div class="features">
+        <ul class="service-list">
+          <p>✔ Recherche et planification publicitaires</p>
+
+          <p>✔ Conception créative d'annonces</p>
+          <p>✔ 
+            Rédaction publicitaire</p>
+          <p>✔ Configuration de la campagne publicitaire</p>
+          <p>✔ Gestion de campagne</p>
+          <p>✔ Rapports mensuels</p>
+      </ul>
+      </div>
+      <button class="btn btn-outline subscribeBtn" data-service="Développement Web">Souscrire</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Section SERVICES -->
+<section class="services" id="services">
+ 
+  <h2 style="color: #1E3A8A; text-align: center;">Choisissez un forfait de publicité sur les réseaux sociaux adapté à votre budget</h2>
+</p>
+
+<div class="services-grid">
+
+  <!-- Carte 1 -->
+  <div class="service-card">
+    <h3>Forfait   base</h3>
+    <h1>500 $/mois</h1>
+    <p>
+      Gérez votre budget publicitaire sur les réseaux sociaux entre 600 et 3 000 $/mois
+    </p>
+    <div class="features">
+      <ul class="service-list">
+      <p>✔ Évaluation des besoins</p>
+
+      <p>✔ Community manager</p>
+      <p>✔ Création de contenus</p>
+      <p>✔ Identité visuelle et logo</p>
+      <p>✔ Charte graphique</p>
+      <p>✔ Brochure et flyer</p>
+      <p>✔ Stratégie Social Média</p>
+      <p>✔ Stratégie d'influence</p>
+      <p>✔ Publicités</p>
+    </ul>
+    </div>
+    <button class="btn btn-outline subscribeBtn" data-service="SEO Avancé">Souscrire</button>
+  </div>
+
+  <!-- Carte 2 -->
+  <div class="service-card">
+    <h3>Forfait Plus</h3>
+    <h1>1 000 $/mois</h1>
+    <p>
+      Gérer un budget publicitaire sur les réseaux sociaux entre 3 000 et 10 000 $/mois
+    </p>
+    <div class="features">
+      <ul class="service-list">
+      <p>✔ Évaluation des besoins</p>
+
+      <p>✔ Community manager</p>
+      <p>✔ Création de contenus</p>
+      <p>✔ Identité visuelle et logo</p>
+      <p>✔ Charte graphique</p>
+      <p>✔ Brochure et flyer</p>
+      <p>✔ Stratégie Social Média</p>
+      <p>✔ Stratégie d'influence</p>
+      <p>✔ Publicités</p>
+    </ul>
+    </div>
+    <button class="btn btn-outline subscribeBtn" data-service="Hébergement Web">Souscrire</button>
+  </div>
+
+  <!-- Carte 3 -->
+  <div class="service-card">
+    <h3>Forfait pro</h3>
+    <h1>2 000 $/mois</h1>
+    <p>
+      Gérer un budget publicitaire sur les réseaux sociaux supérieur à 10 000 $/mois
+    </p>
+
+    <div class="features">
+      <ul class="service-list">
+      <p>✔ Évaluation des besoins</p>
+
+      <p>✔ Community manager</p>
+      <p>✔ Création de contenus</p>
+      <p>✔ Identité visuelle et logo</p>
+      <p>✔ Charte graphique</p>
+      <p>✔ Brochure et flyer</p>
+      <p>✔ Stratégie Social Média</p>
+      <p>✔ Stratégie d'influence</p>
+      <p>✔ Publicités</p>
+    </ul>
+    </div>
+    <button class="btn btn-outline subscribeBtn" data-service="Développement Web">Souscrire</button>
+  </div>
+
+</div>
+</section>
+
+
+
+<!-- Section SERVICES -->
+<section class="services" id="services">
+  <h3 style="font-size:2.4rem;color: #1E3A8A;margin-bottom:20px;">CRÉATION DE SITE WEB</h3>
+  <p style="color: #1E3A8A;max-width:700px;margin:auto; font-size: 1.5rem;">
+    PERSONNALISER VOTRE SITE WEB
+  </p>
+
+  <div class="services-grid">
+
+    <!-- Carte 1 -->
+    <div class="service-card">
+      <h3>SITE WEB VITRINE SUR 3 PAGES</h3>
+      <h1>$ 1500</h1>
+      <p>
+        Notre service de création de sites web 3 pages vise les entreprises et professionnels
+        désirant une présence en ligne efficace. Nous concevons des sites élégants, composés d'une
+        page d'accueil attractive, une page de présentation produits/services, et une page de contact.
+        Avec l’IA, nous assurons une approche moderne, intuitive et compatible avec tous les appareils.
+      </p>
+      <button class="btn btn-outline subscribeBtn" data-service="SEO Avancé">Souscrire</button>
+    </div>
+
+    <!-- Carte 2 -->
+    <div class="service-card">
+      <h3>SITE WEB VITRINE SUR 5 PAGES</h3>
+      <h1>$ 2500</h1>
+      <p>
+        Notre service de création de sites web 5 pages est idéal pour les entreprises et
+        professionnels. Nous concevons des sites élégants incluant une page d'accueil,
+        une page de présentation produits/services et une page de contact.
+        Notre expertise et l’IA garantissent un site intuitif et compatible avec tous les appareils.
+      </p>
+      <button class="btn btn-outline subscribeBtn" data-service="Hébergement Web">Souscrire</button>
+    </div>
+
+    <!-- Carte 3 -->
+    <div class="service-card">
+      <h3>SITE WEB VITRINE SUR 6 PAGES</h3>
+      <h1>$ 3000</h1>
+      <p>
+        Nous proposons un service de création de site web à 6 pages pour 149$ par mois pendant 12 mois,
+        maintenance incluse. Idéal pour les entreprises cherchant une présence en ligne efficace.
+        Site intuitif, élégant et compatible avec tous les appareils.
+      </p>
+      <button class="btn btn-outline subscribeBtn" data-service="Développement Web">Souscrire</button>
+    </div>
+
+  </div>
+</section>
+  
+<style>
+  section.services {
+  margin: 20px 0 !important;
+  padding: 0 !important;
+}
+
+</style>
+<style>
+
+.service-list {
+  list-style: none; /* enlever les puces par défaut */
+  padding: 0;
+  margin: 20px 0;
+}
+
+.service-list li {
+  font-size: 1rem;
+  color: #333; /* texte gris foncé */
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.service-list li::before {
+ 
+  background-color: #1E3A8A; 
+  content: "✔";
+  font-weight: bold;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+}
+
+
+.services {
+  padding: 70px 20px;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.service-card h1 {
+  background-color: #1E3A8A;   /* cercle bleu foncé */
+  color: #fff !important;      /* texte blanc toujours visible */
+  font-size: 1.3rem;           /* taille correcte */
+  font-weight: bold;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;          /* cercle parfait */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;          /* centre le texte multi-lignes */
+  line-height: 1.4;
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* ombre pour contraste */
+}
+
+
+.service-card .features p {
+  border-bottom: 1px solid #000; /* trait noir */
+  padding: 5px 0;
+  margin: 0;
+}
+/* */
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1E3A8A;
+}
+
+.service-card {
+  background: transparent; /* fond transparent */
+  border: 2px solid #1E3A8A; /* contour bleu foncé */
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* ombre légère */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  color: #1E3A8A; /* texte bleu foncé */
+  text-align: center;
+}
+
+
+/* Titre de la carte */
+.service-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.service-card p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Prix */
+.service-card .price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFD700; /* doré */
+  margin-bottom: 15px;
+}
+
+/* Liste des avantages */
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card ul li {
+  position: relative;
+  padding-left: 25px;
+  margin: 8px 0;
+}
+
+
+.service-card {
+
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 15px;
+}
+
+/* Grille responsive */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Carte de service */
+.service-card {
+  background: transparent; /* fond transparent */
+  border: 2px solid #00008B; /* contour bleu foncé */
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  color: #00008B; /* texte principal */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre tout à l'intérieur */
+}
+
+
+/* Titre dans un carré bleu */
+.service-card h3 {
+  display: inline-block; /* largeur ajustée au texte */
+  background-color: #1E3A8A; /* carré bleu */
+  color: #ffffff; /* texte blanc */
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  margin-bottom: 20px; /* espace sous le titre */
+  text-align: center;
+}
+
+/* Description */
+.service-card p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Prix */
+.service-card .price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFD700; /* doré */
+  margin-bottom: 15px;
+}
+
+/* Liste des avantages */
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card ul li {
+  position: relative;
+  padding-left: 25px;
+  margin: 8px 0;
+}
+
+.service-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #10B981; /* vert accent */
+}
+
+
+.service-card p {
+  color: #1E3A8A;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.btn-outline {
+  padding: 10px 18px;
+  border: 2px solid #1E3A8A;
+  border-radius: 8px;
+  background: transparent;
+  color: #1E3A8A;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: #1E3A8A;
+  color: #fff;
+  
+}
+.services p{
+   color: #1E3A8A
+  }
+  .services h1{
+   color: #1E3A8A
+  }
+
+
+   h1{
+   font-size: 2rem;
+  } 
+</style>
+
+<!-- Modale Paiement -->
+<div id="paymentModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modalTitle">Paiement Sécurisé</h3>
+    <p id="selectedService"></p>
+
+    <!-- Zone Mobile Money -->
+    <div id="orangeZone" style="display:none;">
+      <p><strong>Paiement Mobile Money (250 $ / mois)</strong></p>
+      <input type="tel" id="orangeNumber" placeholder="Numéro Mobile Money" />
+      <select id="orangeOperator">
+        <option value="orange">Orange Money</option>
+        <option value="mtn">MTN Mobile Money</option>
+      </select>
+
+      <!-- Option récurrent -->
+      <label style="display:block;margin-top:10px;">
+        <input type="checkbox" id="orangeRecurring" checked />
+        Activer le prélèvement automatique chaque mois
+      </label>
+
+      <button class="btn btn-submit" onclick="payerOrange()">Valider</button>
+    </div>
+
+    <!-- Zone Visa -->
+    <div id="visaZone" style="display:none; max-height:420px; overflow-y:auto; padding-right:10px;">
+      <p><strong>Paiement par carte bancaire (250 $ / mois)</strong></p>
+
+      <label>Numéro de carte</label>
+      <input type="text" id="cardNumber" placeholder="Numéro de carte" maxlength="16" />
+
+      <label>Nom sur la carte</label>
+      <input type="text" id="cardName" placeholder="Nom complet" />
+
+      <!-- Adresse de facturation -->
+      <label style="margin-top:10px;">Adresse de facturation</label>
+      <input type="text" id="billingAddress" placeholder="Votre adresse de facturation" />
+
+      <!-- Adresse d’expédition -->
+      <label style="margin-top:10px;">Adresse d’expédition</label>
+      <input type="text" id="shippingAddress" placeholder="Votre adresse d’expédition" />
+
+      <div style="display:flex; gap:10px; margin-top:10px;">
+        <input type="text" id="expiry" placeholder="MM/AA" maxlength="5" style="flex:1;" />
+        <input type="text" id="cvv" placeholder="CVV" maxlength="3" style="flex:1;" />
+      </div>
+
+      <!-- Option récurrent -->
+      <label style="display:block;margin-top:10px;">
+        <input type="checkbox" id="visaRecurring" checked />
+        Activer le prélèvement automatique chaque mois
+      </label>
+
+      <button class="btn btn-submit" style="margin-top:15px;" onclick="payerVisa()">Confirmer 250 $ / mois</button>
+    </div>
+
+    <!-- Choix méthodes -->
+    <div id="choiceZone">
+      <button class="btn" style="background:#fffb00cb;color:#fff;" onclick="showZone('orange')">Mobile Money</button>
+      <button class="btn" style="background:#1a73e8;color:#fff;" onclick="showZone('visa')">Visa / Mastercard</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const subscribeBtns = document.querySelectorAll('.subscribeBtn');
+  const paymentModal = document.getElementById('paymentModal');
+  const selectedService = document.getElementById('selectedService');
+
+  // Ouvrir modale
+  subscribeBtns.forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      selectedService.innerText = "Service choisi : " + btn.dataset.service;
+      paymentModal.style.display = "flex";
+      showZone("choice"); // reset
+    });
+  });
+
+  function closeModal(){ paymentModal.style.display="none"; }
+
+  // Changer zone
+  function showZone(type){
+    document.getElementById("choiceZone").style.display="none";
+    document.getElementById("orangeZone").style.display="none";
+    document.getElementById("visaZone").style.display="none";
+    if(type==="orange") document.getElementById("orangeZone").style.display="block";
+    else if(type==="visa") document.getElementById("visaZone").style.display="block";
+    else document.getElementById("choiceZone").style.display="block";
+  }
+
+  // Démo Mobile Money
+  function payerOrange(){
+    let numero=document.getElementById("orangeNumber").value;
+    let operateur=document.getElementById("orangeOperator").value;
+    let recurring=document.getElementById("orangeRecurring").checked;
+    if(numero===""){ alert("⚠️ Veuillez entrer votre numéro Mobile Money"); return; }
+    alert("✅ Mobile Money : Abonnement activé\nMontant : 250 $\nOpérateur : "+operateur+"\nNuméro : "+numero+"\nPrélèvement : "+(recurring?"chaque mois":"unique"));
+    closeModal();
+  }
+
+  // Démo Visa
+  function payerVisa(){
+    let cardNumber=document.getElementById("cardNumber").value;
+    let cardName=document.getElementById("cardName").value;
+    let billing=document.getElementById("billingAddress").value;
+    let shipping=document.getElementById("shippingAddress").value;
+    let recurring=document.getElementById("visaRecurring").checked;
+
+    if(cardNumber.length<16||cardName===""||billing===""||shipping===""){ 
+      alert("⚠️ Merci de remplir toutes les informations correctement"); 
+      return; 
+    }
+
+    // Vérification simple contre cartes virtuelles (simulation)
+    if(cardNumber.startsWith("4") && cardNumber.endsWith("0000")){
+      alert("❌ Cartes virtuelles non acceptées. Veuillez utiliser une carte bancaire réelle.");
+      return;
+    }
+
+    alert("✅ Paiement accepté pour "+cardName+"\nMontant : 250 $\nFacturation : "+billing+"\nExpédition : "+shipping+"\nPrélèvement : "+(recurring?"chaque mois":"unique"));
+    closeModal();
+  }
+</script>
+<script>
+  <script src="https://js.stripe.com/v3/"></script>
+
+
+
+<script>
+  const stripe = Stripe("pk_test_TON_CLE_PUBLIC"); // clé publique
+  const elements = stripe.elements();
+  const card = elements.create("card");
+  card.mount("#card-element");
+
+  const form = document.getElementById("subscription-form");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const { paymentMethod, error } = await stripe.createPaymentMethod({
+      type: "card",
+      card: card,
+      billing_details: { email: document.getElementById("email").value }
+    });
+
+    if (error) {
+      alert(error.message);
+    } else {
+      // Envoi au serveur pour créer l'abonnement
+      const res = await fetch("/create-subscription", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ paymentMethodId: paymentMethod.id, email: document.getElementById("email").value })
+      });
+      const data = await res.json();
+      if(data.success){
+        alert("✅ Abonnement activé avec prélèvement mensuel !");
+      } else {
+        alert("❌ Erreur : " + data.message);
+      }
+    }
+  });
+</script>
+
+</script>
+
+
+
+
+
+
+
+
+  
+<!-- SECTION ACTUALITES -->
+<section class="news" id="news" style="background:#f8f9fa;padding:80px 5%;">
+  <div class="container" style="max-width:1200px;margin:auto;text-align:center;">
+    <h2 style="font-size:2.4rem;color: #1E3A8A;margin-bottom:20px;">Suivez notre actualité</h2>
+    <p style="color: #1E3A8A;max-width:700px;margin:auto;">
+      Découvrez nos dernières nouvelles, conseils en marketing digital, hébergement, et développement web & mobile.
+    </p>
+
+    <!-- Articles -->
+    <div class="news-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin-top:50px;">
+      
+      <!-- Article 1 -->
+      <div class="news-card" style="background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.08);transition:.3s;">
+        <img src="Skywings_17-08-24-main/assets/1.jpg" alt="actu1" style="width:100%;height:200px;object-fit:cover;">
+        <div style="padding:20px;text-align:left;">
+          <h3 style="font-size:1.2rem;color:#333;">Pourquoi choisir un hébergement professionnel ?</h3>
+          <p style="color:rgb(0, 0, 0);font-size:.95rem;margin:10px 0 20px;">
+            Découvrez les avantages d’un hébergement fiable pour votre entreprise et vos projets en ligne...
+          </p>
+          <a href="#" class="btn lire-plus" data-modal="modal1" style="color: #1E3A8A;font-weight:600;cursor:pointer;">Lire plus →</a>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="news-card" style="background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.08);transition:.3s;">
+        <img src="Skywings_17-08-24-main/assets/2.jpg" alt="actu2" style="width:100%;height:200px;object-fit:cover;">
+        <div style="padding:20px;text-align:left;">
+          <h3 style="font-size:1.2rem;color:#333;">5 astuces SEO pour booster votre visibilité</h3>
+          <p style="color:rgb(0, 0, 0);font-size:.95rem;margin:10px 0 20px;">
+            Optimisez votre référencement et attirez plus de clients grâce à nos conseils simples mais efficaces...
+          </p>
+          <a href="#" class="btn lire-plus" data-modal="modal2" style="color: #1E3A8A;font-weight:600;cursor:pointer;">Lire plus →</a>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="news-card" style="background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.08);transition:.3s;">
+        <img src="Skywings_17-08-24-main/assets/4.webp" alt="actu3" style="width:100%;height:200px;object-fit:cover;">
+        <div style="padding:20px;text-align:left;">
+          <h3 style="font-size:1.2rem;color:#333;">Développement mobile : tendances 2025</h3>
+          <p style="color:rgb(0, 0, 0);font-size:.95rem;margin:10px 0 20px;">
+            Explorez les nouvelles tendances des applications mobiles et comment elles transforment le marché...
+          </p>
+          <a href="#" class="btn lire-plus" data-modal="modal3" style="color: #1E3A8A;font-weight:600;cursor:pointer;">Lire plus →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- POPUPS -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Pourquoi choisir un hébergement professionnel ?</h2>
+    <p>
+      Un hébergement professionnel garantit sécurité, rapidité et disponibilité pour votre site web. 
+      Il vous permet d’offrir une meilleure expérience utilisateur et de renforcer la crédibilité de votre entreprise.
+    </p>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>5 astuces SEO pour booster votre visibilité</h2>
+    <p>
+      1. Optimisez vos balises titres et méta descriptions.<br>
+      2. Créez du contenu de qualité et régulier.<br>
+      3. Améliorez la vitesse de votre site.<br>
+      4. Travaillez votre netlinking.<br>
+      5. Utilisez les réseaux sociaux pour partager vos contenus.
+    </p>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Développement mobile : tendances 2025</h2>
+    <p>
+      Les tendances 2025 incluent l’intégration de l’IA dans les applications, 
+      les expériences immersives avec la réalité augmentée, 
+      et l’optimisation des apps pour les objets connectés.
+    </p>
+  </div>
+</div>
+
+<!-- STYLES POPUP -->
+<style>
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    left: 0; top: 0; 
+    width: 100%; height: 100%; 
+    background: rgba(0,0,0,0.6); 
+    justify-content: center; 
+    align-items: center;
+  }
+  .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    animation: fadeIn .3s ease;
+    text-align: left;
+  }
+  .modal-content h2 {
+    margin-top: 0;
+    color: #1E3A8A;
+  }
+  .close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    color: #999;
+  }
+  .close:hover {
+    color: #333;
+  }
+  @keyframes fadeIn {
+    from {opacity:0; transform: translateY(-20px);}
+    to {opacity:1; transform: translateY(0);}
+  }
+</style>
+
+<!-- SCRIPT POPUP -->
+<script>
+  // Ouvrir modal
+  document.querySelectorAll('.lire-plus').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      let modalId = this.getAttribute('data-modal');
+      document.getElementById(modalId).style.display = 'flex';
+    });
+  });
+
+  // Fermer modal
+  document.querySelectorAll('.close').forEach(btn => {
+    btn.addEventListener('click', function() {
+      this.closest('.modal').style.display = 'none';
+    });
+  });
+
+  // Fermer en cliquant en dehors
+  window.addEventListener('click', function(e) {
+    document.querySelectorAll('.modal').forEach(modal => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+
+<style>
+  .news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,.12);
+  }
+</style>
+
+
+  <!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <h2>Ce que disent nos clients</h2>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="testimonial active">
+        <img src="Skywings_17-08-24-main\assets\client-1.jpg" alt="Client" class="avatar">
+        <p>“Mon site est en première page Google grâce à eux.”</p>
+        <h4>— Jean Dupont</h4>
+      </div>
+      <div class="testimonial">
+        <img src="Skywings_17-08-24-main\assets\client-3.jpg" alt="Client" class="avatar">
+        <p>“Design moderne, équipe réactive et professionnelle.”</p>
+        <h4>— Amina K.</h4>
+      </div>
+      <div class="testimonial">
+        <img src="Skywings_17-08-24-main\assets\client-4.jpg" alt="Client" class="avatar">
+        <p>“Hébergement ultra rapide et service client impeccable.”</p>
+        <h4>— Marc L.</h4>
+      </div>
+    </div>
+    <!-- Boutons -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+
+<style>
+.testimonials {
+  text-align: center;
+  padding: 70px 20px;
+  background: #f8f9fa;
+}
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1E3A8A;
+}
+.carousel-container {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+.testimonial {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+}
+.testimonial.active {
+  opacity: 1;
+  transform: scale(1);
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.testimonial p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+.testimonial h4 {
+  color: #1E3A8A;
+  font-weight: bold;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1E3A8A;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.prev { left: -50px; }
+.next { right: -50px; }
+.prev:hover, .next:hover { background: #1E3A8A; }
+@media (max-width: 768px) {
+  .prev { left: 10px; }
+  .next { right: 10px; }
+}
+</style>
+
+<script>
+let index = 0;
+const testimonials = document.querySelectorAll(".testimonial");
+const total = testimonials.length;
+
+function showTestimonial(n) {
+  testimonials.forEach((t, i) => {
+    t.classList.remove("active");
+  });
+  testimonials[n].classList.add("active");
+  document.querySelector(".carousel").style.transform = `translateX(-${n * 100}%)`;
+}
+
+document.querySelector(".next").onclick = () => {
+  index = (index + 1) % total;
+  showTestimonial(index);
+};
+document.querySelector(".prev").onclick = () => {
+  index = (index - 1 + total) % total;
+  showTestimonial(index);
+};
+
+// Auto défilement
+setInterval(() => {
+  index = (index + 1) % total;
+  showTestimonial(index);
+}, 5000);
+</script>
+<h3 style="font-size:2.4rem;color:#1E3A8A;margin-bottom:20px;
+ text-align: center;
+  padding: 70px 20px;
+">CONTACT</h3>
+
+<form class="contact-form" id="#contactForm">
+  <input type="text" name="name" placeholder="Nom complet" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+  <button  type="submit" class="btn btn-primary"  >  Envoyer</button>
+</form>
+<style>.contact-form button {
+  color: #1E3A8A;
+  background-color: white;
+}
+  </style>
+
+
+
+<!-- Message de confirmation -->
+<p id="status"></p>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let formData = new FormData(this);
+
+  fetch("sendMail.php", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("status").innerHTML = "✅ Message envoyé avec succès !";
+    document.getElementById("contactForm").reset();
+  })
+  .catch(error => {
+    document.getElementById("status").innerHTML = "❌ Erreur lors de l’envoi.";
+  });
+});
+</script>
+
+<style>
+  section.news,
+section.testimonials {
+  padding: 20px 5% !important;
+  margin: 10px 0 !important;
+}
+
+</style>
+<!-- FOOTER (structure type “Quotation” d’Afrik Solutions) -->
+<footer class="footer-quotation">
+  <div class="footer-container">
+    <div class="footer-row">
+      
+      <!-- Colonne Accès Rapide -->
+      <div class="footer-col">
+        <h5 style="color: #1E3A8A;">Accès Rapide</h5>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contactez-nous</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne Cameroun -->
+      <div class="footer-col">
+        <h5>Cameroun</h5>
+        <p>Douala, Akwa</p>
+        <p>+237 655 332 183</p>
+        <p>contact@siteasolutions.com</p>
+      </div>
+
+      <!-- Colonne France -->
+      <div class="footer-col">
+        <h5>France</h5>
+        <p>Paris, La Défense</p>
+        <p>+33 6 09 84 99 76</p>
+        <p>contact@siteasolutions.com</p>
+      </div>
+
+      <!-- Colonne Réseaux Sociaux -->
+      <div class="footer-col">
+        <h5>Mode de paiement</h5>
+        <div class="social-icons">
+          <a href="#"><img src="Skywings_17-08-24-main\assets\LOGO-850-paypal.webp" alt="Facebook" /></a>
+          <a href="#"><img src="Skywings_17-08-24-main\assets\images-removebg-preview (1).png" alt="Twitter" /></a>
+          
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bas du footer -->
+    <div class="footer-bottom">
+      <p style="color: #1E3A8A;" >© 2025 PAMY SOLUTION — Tous droits réservés</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Styles CSS -->
+<style>
+  .footer-quotation {
+    background-color: #f1f4fb; /* ou une couleur claire pro */
+    color: #333;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-col {
+    flex: 1 1 200px; /* adaptatif, au moins 200px de large */
+    min-width: 180px;
+  }
+  .footer-col h5 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #1E3A8A;
+  }
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+  .footer-col ul li a {
+    color: #1E3A8A;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-col ul li a:hover {
+    color: #0d6efd; /* accent bleu */
+  }
+  .footer-col p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #1E3A8A;
+  }
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .social-icons img {
+    
+    height: 50px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .social-icons img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #1E3A8A;
+  }
+
+  /* Responsive */
+  @media (max-width:768px) {
+    .footer-row {
+      flex-direction: column;
+    }
+    .footer-col {
+      min-width: 100%;
+    }
+    .footer-container {
+      padding: 0 10px;
+    }
+  }
+</style>
+
+  
+
+  <!-- MODAL PAIEMENT -->
+  <div class="modal" id="paymentModal">
+    <div class="modal-content">
+      <span class="modal-close" id="closeModal">&times;</span>
+      <h3 id="modalService">Paiement pour …</h3>
+      <select required>
+        <option value="">Méthode de paiement</option>
+        <option>Orange Money</option>
+        <option>MTN Mobile Money</option>
+        <option>PayPal</option>
+        <option>Visa / Mastercard</option>
+      </select>
+      <input type="text" placeholder="Nom complet" required>
+      <input type="email" placeholder="Email" required>
+      <button class="btn btn-primary" id="payNow">Payer</button>
+    </div>
+  </div>
+
+  <script>
+    const modal=document.getElementById('paymentModal');
+    const closeModal=document.getElementById('closeModal');
+    const payNow=document.getElementById('payNow');
+    const subs=document.querySelectorAll('.subscribeBtn');
+    const modalService=document.getElementById('modalService');
+    subs.forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        modalService.innerText="Paiement pour "+btn.dataset.service;
+        modal.style.display='flex';
+      });
+    });
+    closeModal.onclick=()=>modal.style.display='none';
+    payNow.onclick=()=>{alert("✅ Paiement simulé avec succès !");modal.style.display='none';};
+    window.onclick=(e)=>{if(e.target==modal)modal.style.display='none';};
+  </script>
+</body>
+</html>
